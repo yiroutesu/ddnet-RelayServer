@@ -483,7 +483,7 @@ void CGameWorld::NetObjAdd(int ObjId, int ObjType, const void *pObjData, const C
 					else if(Dist < Second)
 					{
 						Second = Dist;
-					}
+				}
 				}
 				if(pClosest && std::max(First, 2.0f) * 1.2f < Second)
 					NetProj.m_Owner = pClosest->m_Id;

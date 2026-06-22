@@ -746,7 +746,7 @@ void CGameClient::UpdatePositions()
 			else
 			{
 				m_LocalCharacterPos = mix(m_PredictedPrevChar.m_Pos, m_PredictedChar.m_Pos, Client()->PredIntraGameTick(g_Config.m_ClDummy));
-			}
+		}
 		}
 		else
 		{
@@ -1859,8 +1859,8 @@ void CGameClient::OnNewSnapshot(bool DummySwapped)
 					else if(m_aStats[pInfo->m_ClientId].IsActive())
 					{
 						m_aStats[pInfo->m_ClientId].JoinSpec(Client()->GameTick(g_Config.m_ClDummy));
-					}
 				}
+			}
 			}
 			else if(Item.m_Type == NETOBJTYPE_DDNETPLAYER)
 			{
@@ -2859,7 +2859,7 @@ void CGameClient::OnPredict()
 		else
 		{
 			m_aLastActive[i] = false;
-		}
+	}
 	}
 
 	if(g_Config.m_Debug && g_Config.m_ClPredict && m_PredictedTick == Client()->PredGameTick(g_Config.m_ClDummy))
@@ -4817,7 +4817,7 @@ void CGameClient::ConchainMenuMap(IConsole::IResult *pResult, void *pUserData, I
 	else
 	{
 		pfnCallback(pResult, pCallbackUserData);
-	}
+}
 }
 
 void CGameClient::DummyResetInput()

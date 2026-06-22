@@ -6,6 +6,7 @@
 #include "controls.h"
 
 #include <base/log.h>
+#include <base/math.h>
 #include <base/vmath.h>
 
 #include <engine/shared/config.h>

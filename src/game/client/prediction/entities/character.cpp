@@ -1370,7 +1370,7 @@ void CCharacter::Read(CNetObj_Character *pChar, CNetObj_DDNetCharacter *pExtende
 			else if(pExtended->m_FreezeEnd == -1)
 			{
 				m_Core.m_DeepFrozen = true;
-			}
+		}
 		}
 		else
 		{

@@ -76,7 +76,7 @@ int CRaceHelper::TimeFromStr(const char *pStr)
 	else
 	{
 		return TimeFromSecondsStr(pStr);
-	}
+}
 }
 
 int CRaceHelper::TimeFromFinishMessage(const char *pStr, char *pNameBuf, int NameBufSize)

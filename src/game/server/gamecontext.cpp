@@ -4153,6 +4153,11 @@ void CGameContext::RegisterChatCommands()
 	Console()->Register("hitothers", "?s['all'|'hammer'|'shotgun'|'grenade'|'laser']", CFGFLAG_CHAT | CMDFLAG_PRACTICE, ConPracticeToggleHitOthers, this, "Toggles hit others");
 
 	Console()->Register("kill", "", CFGFLAG_CHAT | CFGFLAG_SERVER, ConProtectedKill, this, "Kill yourself when kill-protected during a long game (use f1, kill for regular kill)");
+
+	//yirou
+	Console()->Register("relaystart", "?s", CFGFLAG_CHAT | CFGFLAG_SERVER, ConStartRelay, this, "strat the relay game；reco:srart all realy game");
+	Console()->Register("relaytimeset", "?i", CFGFLAG_CHAT | CFGFLAG_SERVER, ConSetRelayTime, this, "");
+
 }
 
 void CGameContext::OnInit(const void *pPersistentData)

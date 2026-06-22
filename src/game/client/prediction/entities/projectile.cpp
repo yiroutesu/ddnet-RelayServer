@@ -145,7 +145,7 @@ void CProjectile::Tick()
 		else if(!m_Freeze)
 		{
 			m_MarkedForDestroy = true;
-		}
+	}
 	}
 	if(m_LifeSpan == -1)
 	{

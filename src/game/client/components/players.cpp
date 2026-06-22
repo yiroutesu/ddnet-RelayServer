@@ -635,7 +635,7 @@ void CPlayers::RenderPlayer(
 		else
 		{
 			State.Add(&g_pData->m_aAnimations[ANIM_IDLE], 0.0f, 1.0f); // TODO: some sort of time here
-		}
+	}
 	}
 	else if(!WantOtherDir)
 	{
@@ -1113,7 +1113,7 @@ void CPlayers::OnInit()
 				else
 				{
 					Graphics()->GetSpriteScale(g_pData->m_Weapons.m_aId[i].m_aSpriteMuzzles[n], ScaleX, ScaleY);
-				}
+			}
 			}
 
 			float SWidth = (g_pData->m_Weapons.m_aId[i].m_VisualSize * ScaleX) * (4.0f / 3.0f);
