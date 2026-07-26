@@ -439,18 +439,6 @@ void CTeeHistorian::BeginInputs()
 	m_State = STATE_INPUTS;
 }
 
-template<class T>
-static rust::Slice<const int32_t> AsSlice(const T *pObject)
-{
-	return rust::Slice((const int32_t *)pObject, sizeof(*pObject) / sizeof(int32_t));
-}
-
-template<class T>
-static rust::Slice<int32_t> AsMutSlice(T *pObject)
-{
-	return rust::Slice((int32_t *)pObject, sizeof(*pObject) / sizeof(int32_t));
-}
-
 void CTeeHistorian::RecordPlayerInput(int ClientId, uint32_t UniqueClientId, const CNetObj_PlayerInput *pInput)
 {
 	CTeehistorianPacker Buffer;
