@@ -118,6 +118,7 @@ tags
 
 # tidy-alphabetical-start
 *.a
+*.bak
 *.cmd
 *.csv
 *.dll
